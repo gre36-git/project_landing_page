@@ -74,12 +74,26 @@ display: flex;
 .firstBox {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
 }
-/*places the image to the right of the text */
-.f1 {
+/*places the h3 on top of the <p>*/
+.a1 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
+    max-width: 700px;
+    flex:1;
+}
+/*places the image to the right of the text */
+.a2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    min-width: 300px;
+    flex:1;
 }
 /*some size rules for the moss image in firstBox, can be changed later */
 #moss {
@@ -87,14 +101,74 @@ display: flex;
     max-height: 300px;
 }
 
-.card {
- display: flex;
- flex-direction: row;
+/*secondBox is the box under firstBox
+-later I can just concentrate them all under one rule but not yet */
+.secondBox {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(21, 179, 82);
+    justify-content: center;
+    align-items: center;
 }
-.Q1 {
-    flex:1;
-}
+/* b1 's rules make sure the images + text are given a box to live within
+that is centered and gives them spaces in between each other*/
+.b1 {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 
+}
+/* sets the maximum width of each secondBox image + its' associated text*/
+.info {
+    max-width: 200px;
+}
+/*this box will have italicized medium text followed by
+bold small text */
+.thirdBox {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+    font-style: italic;
+    justify-content: space-between;
+    align-items: center;
+}
+/* text formatting*/
+.c1 {
+    display: flex;
+    flex: wrap;
+    flex: 1;
+}
+.c2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size:large;
+    font-weight: bold;
+    font-style: normal;
+    flex: 1;
+
+}
+/*final and fourth box, aka fourthBox */
+.fourthBox {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(172, 115, 30);
+    justify-content: center;
+    align-items: center;
+}
+.d1 {
+display: flex;
+flex-wrap:wrap;
+flex-direction: column;
+max-width: 700px;
+flex:1;
+}
+.d2 {
+display:flex;
+flex-wrap: wrap;
+}
 
 /* holy grail rules 
 .HolyGrail {
@@ -171,7 +245,7 @@ img {
     margin-bottom: 32px;
   }
   
-  .container {
+  .f2 {
     display: flex;
     justify-content: center;
     gap: 52px;
@@ -187,9 +261,7 @@ img {
 
 
 
-.container {
-    display: flex;
-}
+
 /*
 .thirdBox {
 
