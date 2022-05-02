@@ -1,0 +1,155 @@
+/*
+body {
+    background-image: url('./images/foresttreebackground.jpg');
+}
+*/
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 8px;
+   border-style: solid;
+   background-color: bisque;
+
+}
+/* enforces sticky footer and content stretches to fill page*/
+.holygrailDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    /* this removes the dots on the list items*/
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    background-color: aliceblue;
+  }
+  
+  a {
+    font-size: 22px;
+    /* this removes the line under the links */
+    text-decoration: none;
+  }
+.navbar {
+display: flex;
+flex-direction: row;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+
+
+.pageTitle{
+    border-bottom: 4vh;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notifications {
+    margin-left: auto;
+}
+
+.card {
+ display: flex;
+ flex-direction: row;
+}
+.Q1 {
+    flex:1;
+}
+
+
+/* holy grail rules 
+.HolyGrail {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  
+.HolyGrail-body {
+    display: flex;
+    flex: 1;
+}
+
+
+.HolyGrail-content {
+  flex: 1;
+}
+
+.HolyGrail-nav, .HolyGrail-ads {
+  /* 12em is the width of the columns
+  flex: 0 0 12em;
+}
+
+.HolyGrail-nav {
+  
+  order: -1;
+}
+
+.HolyGrail,
+.HolyGrail-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.HolyGrail-nav {
+  order: -1;
+}
+
+@media (min-width: 768px) {
+  .HolyGrail-body {
+    flex-direction: row;
+    flex: 1;
+  }
+  .HolyGrail-content {
+    flex: 1;
+  }
+  .HolyGrail-nav, .HolyGrail-ads {
+    /* 12em is the width of the columns 
+    flex: 0 0 12em;
+  }
+*/
+
+/* information rules, plant cards 
+
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+
+  /* SOLUTION 
+  
+  body {
+    text-align: center;
+  }
+  
+  .title {
+    margin-bottom: 32px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+  }
+  
+  .info {
+    max-width: 200px;
+  }
+
+  */
+
+  
