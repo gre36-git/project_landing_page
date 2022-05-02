@@ -4,25 +4,29 @@ body {
 }
 */
 
-#header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-    border-bottom: 8px;
-   border-style: solid;
-   background-color: bisque;
-
-}
-/* enforces sticky footer and content stretches to fill page*/
-.holygrailDiv {
+/* start of code for enforcing sticky footer/grail layout and stretching content to fill page*/
+.holygrail {
     display: flex;
     flex-direction: column;
+    
 }
-
+/*sticky footer to bottom of page */
+.stretch {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+/*formatting for footer */
+footer {
+border: 5px;
+background-color: gray;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* this removes the dots on the list items and other unwanted default traits*/
 ul {
-    /* this removes the dots on the list items*/
+    
     list-style-type: none;
     display: flex;
     margin: 0;
@@ -30,30 +34,57 @@ ul {
     gap: 16px;
     background-color: aliceblue;
   }
-  
+  /* this removes the line under the links */
   a {
     font-size: 22px;
-    /* this removes the line under the links */
     text-decoration: none;
   }
-.navbar {
-display: flex;
-flex-direction: row;
-  justify-content: space-between;
-  padding: 8px;
+
+
+/* neccesary flex box building */
+header {
+    display: flex;
 }
-
-
-
+/*formatting for my title */
 .pageTitle{
-    border-bottom: 4vh;
+    flex: 1;
+    border-bottom: 2vh;
     border-style: solid;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.notifications {
+/* makes my nav bar flex */
+.navbar {
+display: flex;
+}
+/* navbar link formatting */
+.links {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+/* creates space between the nav links */
+.links li {
     margin-left: auto;
+    margin-right: auto;
+}
+/*contents of my first 'box' under the nav bar */
+.firstBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*places the image to the right of the text */
+.f1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/*some size rules for the moss image in firstBox, can be changed later */
+#moss {
+    max-width: auto;
+    max-height: 300px;
 }
 
 .card {
@@ -72,13 +103,13 @@ flex-direction: row;
     flex-direction: column;
 }
   
-.HolyGrail-body {
+.HolyGrail-body1 {
     display: flex;
     flex: 1;
 }
 
 
-.HolyGrail-content {
+.secondBox {
   flex: 1;
 }
 
@@ -93,7 +124,7 @@ flex-direction: row;
 }
 
 .HolyGrail,
-.HolyGrail-body {
+.HolyGrail-body1 {
   display: flex;
   flex-direction: column;
 }
@@ -103,11 +134,11 @@ flex-direction: row;
 }
 
 @media (min-width: 768px) {
-  .HolyGrail-body {
+  .HolyGrail-body1 {
     flex-direction: row;
     flex: 1;
   }
-  .HolyGrail-content {
+  .secondBox {
     flex: 1;
   }
   .HolyGrail-nav, .HolyGrail-ads {
@@ -145,11 +176,22 @@ img {
     justify-content: center;
     gap: 52px;
   }
-  
-  .info {
+  */
+
+/* sets max width of rock paper and scissor img*/
+  .info img{
     max-width: 200px;
   }
 
-  */
 
-  
+
+
+
+.container {
+    display: flex;
+}
+/*
+.thirdBox {
+
+}
+*/
