@@ -35,9 +35,10 @@ ul {
     background-color: aliceblue;
   }
   /* this removes the line under the links */
-  a {
-    font-size: 22px;
+  .colorLinks {
+    font-size: 18px;
     text-decoration: none;
+    color: #E5E7EB;
   }
 
 
@@ -49,15 +50,11 @@ header {
     font-size: x-bold;
     color: #F9FAF8;
 }
-/*formatting for my title */
-.pageTitle{
-    flex: 1;
-    border-bottom: 2vh;
-    border-style: solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.links{
+  background-color: #1F2937;
+  color: red;
 }
+
 
 
 /* ==============start nav changes 050322======= */
@@ -96,21 +93,7 @@ Font-size: 18px;
 
 }
 /* ==============end nav changes 050322======= */
-/* makes my nav bar flex */
-.navbar {
-display: flex;
-}
-/* navbar link formatting */
-.links {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-}
-/* creates space between the nav links */
-.links li {
-    margin-left: auto;
-    margin-right: auto;
+
 }
 /*contents of my first 'box' under the nav bar */
 .firstBox {
