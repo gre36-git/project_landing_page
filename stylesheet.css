@@ -58,6 +58,44 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+
+/* ==============start nav changes 050322======= */
+
+/* navbar flexbox and controls */
+.navbox {
+  background-color: #1F2937;
+Text-size: 18px;
+Font-color: #E5E7EB;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+ul {
+ list-style-type: none;
+ display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+Font-color: #E5E7EB;
+Font-size: 18px;
+
+
+}
+/* ==============end nav changes 050322======= */
 /* makes my nav bar flex */
 .navbar {
 display: flex;
@@ -176,100 +214,12 @@ display:flex;
 flex-wrap: wrap;
 }
 
-/* holy grail rules 
-.HolyGrail {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-  
-.HolyGrail-body1 {
-    display: flex;
-    flex: 1;
-}
-
-
-.secondBox {
-  flex: 1;
-}
-
-.HolyGrail-nav, .HolyGrail-ads {
-  /* 12em is the width of the columns
-  flex: 0 0 12em;
-}
-
-.HolyGrail-nav {
-  
-  order: -1;
-}
-
-.HolyGrail,
-.HolyGrail-body1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.HolyGrail-nav {
-  order: -1;
-}
-
-@media (min-width: 768px) {
-  .HolyGrail-body1 {
-    flex-direction: row;
-    flex: 1;
-  }
   .secondBox {
     flex: 1;
   }
-  .HolyGrail-nav, .HolyGrail-ads {
-    /* 12em is the width of the columns 
-    flex: 0 0 12em;
-  }
-*/
-
-/* information rules, plant cards 
-
-
-img {
-  width: 100px;
-  height: 100px;
-}
-
-.title {
-  font-size: 36px;
-  font-weight: 900;
-}
-
-
-  /* SOLUTION 
-  
-  body {
-    text-align: center;
-  }
-  
-  .title {
-    margin-bottom: 32px;
-  }
-  
-  .f2 {
-    display: flex;
-    justify-content: center;
-    gap: 52px;
-  }
-  */
 
 /* sets max width of rock paper and scissor img*/
   .info img{
     max-width: 200px;
   }
 
-
-
-
-
-
-/*
-.thirdBox {
-
-}
-*/
