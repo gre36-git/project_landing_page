@@ -39,11 +39,16 @@ ul {
 
 /* header */
 .header {
-  background-color: #1F2937;
+  all: unset;
   display: flex;
+  justify-content: space-between;
+
+  /*
+
+  
+  background-color: #1F2937;
   flex-direction: row;
   flex: 1;
-  justify-content: center;
   align-items: center;
   font-size: 18px;
   color: #E5E7EB;
@@ -54,52 +59,87 @@ ul {
   border-style: dotted;
   padding-top: 25px;
   padding-bottom: 25px;
-
+*/
 /* ensures that header1 shrinks first */
+/*
   flex: 1 1 0%;
-
-
+  */
 }
 .header1{
-/* ensures that header1 shrinks first */
-  flex: 2 1 0%;
-
-
+  all: unset;
   display: flex;
-  flex-shrink: 0;
   flex-direction: column;
-  justify-content: center;
+  flex:1;
+  width: 33.3%;
+
+  background-color: #1F2937;
+
+  border: red;
+  border-width: 2px;
+  border-style: dotted;
+
+/*
+  flex: 2 1 0%;
+  /* ensures that header1 shrinks first */
+/*
+  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
+  height: inherit;
+ 
   max-width: 500px;
   max-height: auto;
-  background-color: #1F2937;
+  margin-left: 50px;
 
-  border: red;
-  border-width: 2px;
-  border-style: dotted;
+  gap: 10px;
+  flex-grow: 30%;
+
+  */
 }
 .header1 h3 {
-font-size: 48px; }
+font-size: 48px;}
 
-.header2 {
+#placeholder{
+  all: unset;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex:1;
+  width: 33.3%;
+  /*
+  flex-grow: 30%;
+  flex:1;
+  justify-content:center;
+  align-items:center;
   background-color: #1F2937;
-  max-width: 500px;
-  max-height: inherit;
+  margin-right: 25px;
 
   border: red;
   border-width: 2px;
   border-style: dotted;
+  */
+}
+.header2 {
+  display: flex;
+  background-color: #1F2937;
+max-width: 500px;
+max-height:auto;
+
+  
 
 }
+.secondHeader {
+  font-size: 36px;
+  font-weight: 800;
+  /*font color */
+  
+}
+
+
 .header button {
   display: flex;
   flex-shrink: 0;
   background-color:#3882F6;
   color: white;
- padding:15px;
+  padding:15px;
   border-radius: 15px;
 
   /*
@@ -146,6 +186,8 @@ font-size: 48px; }
     background-color: rgb(237, 64, 235);
     justify-content: center;
     align-items: center;
+    padding-top: 25px;
+  padding-bottom: 25px;
 
     border: red;
   border-width: 2px;
@@ -179,13 +221,16 @@ img .info {
   max-width: 200px;
   max-height: 200px;
 }
-.surrender {
+#surrender {
   max-width: 204px;
   max-height: 154px;
 }
 .text {
   display: flex;
   flex-wrap: wrap;
+  /* so that text doesnt go wider than the image width */
+  max-width: fit-content;
+  padding-left: 2px;
 }
 /*this box will have italicized medium text followed by
 bold small text */
@@ -197,6 +242,8 @@ bold small text */
     justify-content: center;
     align-items: center;
     gap: 15px;
+    padding-top: 25px;
+  padding-bottom: 25px;
 
     border: red;
   border-width: 2px;
@@ -237,6 +284,8 @@ bold small text */
     border: red;
   border-width: 2px;
   border-style: dotted;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .d1 {
 display: flex;
