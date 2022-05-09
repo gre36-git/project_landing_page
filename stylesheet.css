@@ -11,6 +11,7 @@
   font-family: Besley, serif;
   background-color: #1F2937;
   margin-bottom: -1px;
+ 
 }
 
 .header {
@@ -164,6 +165,7 @@ img {
   font-weight: 900;
   margin-bottom: 32px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
@@ -172,6 +174,7 @@ img {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-itmes: space-evenly;
   gap: 25px;
@@ -205,6 +208,8 @@ img {
 
 .thirdcontainer {
   display:flex;
+  flex-wrap: wrap;
+
   flex:1;
   justify-content: center;
   align-items: center;
@@ -247,6 +252,7 @@ img {
 
 .fourthcontainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 40px;
