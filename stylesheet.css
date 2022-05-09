@@ -1,340 +1,304 @@
-/* navbar flexbox and controls */
-.navbox {
-  background-color: #1F2937;
- font-size: 18px;
- color: #E5E7EB;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 15px;
+
+/* navbar ----------------------------*/
+* {
+  font-family: helvetica;
+  margin: 0;
 }
+
+.navbar {
+  margin: 0;
+  background: #eee;
+  font-family: Besley, serif;
+  background-color: #1F2937;
+  margin-bottom: -1px;
+}
+
+.header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  justify-content: space-evenly;
+  background-color: #1F2937;
+}
+
+
+
+.logo {
+  font-size: 24px;
+  font-weight: 900;
+  color: #F9FAF8;
+  background-color: #1F2937;
+}
+
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: #E5E7EB;
+
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
 .left, .right {
   display: flex;
   align-items: center;
   gap: 16px;
-  Font-color: #E5E7EB;
-  Font-size: 18px;
-  margin: auto;
+  background-color: #1F2937;  
 }
-/* logo controlls */
-.logo {
-  color: #F9FAF8;
-  font-size: 24px;
-  font-weight: 900;
+
+.links {
+  gap: 20px;
 }
-/* navbar list */
-ul {
- list-style-type: none;
- display: flex;
+/* navbar ^^^^^^^^^^*/
+
+
+/* 1st box ------------------------- */
+
+.firstBox {
   margin: 0;
-  padding: 0;
-  gap: 16px;
-}
-
-/* this removes the line under the links */
-.colorLinks {
-  font-size: 18px;
-  text-decoration: none;
-  color: #E5E7EB;
-}
-
-/* header */
-.header {
-  all: unset;
   display: flex;
-  justify-content: space-between;
-
-  /*
-
-  
-  background-color: #1F2937;
-  flex-direction: row;
-  flex: 1;
   align-items: center;
-  font-size: 18px;
+  justify-content: center;
+background-color:  #1F2937;
+}
+
+.modal {
+  background: white;
+  width: 480px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color:  #1F2937;
+  
   color: #E5E7EB;
-
-
-  border: red;
-  border-width: 2px;
-  border-style: dotted;
-  padding-top: 25px;
-  padding-bottom: 25px;
-*/
-/* ensures that header1 shrinks first */
-/*
-  flex: 1 1 0%;
-  */
-}
-.header1{
-  all: unset;
-  display: flex;
-  flex-direction: column;
-  flex:1;
-  width: 33.3%;
-
-  background-color: #1F2937;
-
-  border: red;
-  border-width: 2px;
-  border-style: dotted;
-
-/*
-  flex: 2 1 0%;
-  /* ensures that header1 shrinks first */
-/*
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: inherit;
  
-  max-width: 500px;
-  max-height: auto;
-  margin-left: 50px;
-
-  gap: 10px;
-  flex-grow: 30%;
-
-  */
 }
-.header1 h3 {
-font-size: 48px;}
-
-#placeholder{
-  all: unset;
-  display: flex;
-  flex:1;
-  width: 33.3%;
-  /*
-  flex-grow: 30%;
-  flex:1;
-  justify-content:center;
-  align-items:center;
-  background-color: #1F2937;
-  margin-right: 25px;
-
-  border: red;
-  border-width: 2px;
-  border-style: dotted;
-  */
-}
-.header2 {
-  display: flex;
-  background-color: #1F2937;
-max-width: 500px;
-max-height:auto;
-
-  
-
-}
-.secondHeader {
-  font-size: 36px;
-  font-weight: 800;
-  /*font color */
-  
+.title{
+  font-size: 48px;
+  font-weight: 600;
+  color: #F9FAF8;
 }
 
-
-.header button {
-  display: flex;
-  flex-shrink: 0;
-  background-color:#3882F6;
+button.continue {
+  background: royalblue;
+  border: 1px solid royalblue;
   color: white;
-  padding:15px;
-  border-radius: 15px;
-
-  /*
-  background: #3882F6;
-  padding: 20px;
-  width: 100px;
-  height: 25px;
-*/}
-
-
-
-
-
-
-
-/* start of code for enforcing sticky footer/grail layout and stretching content to fill page*/
-.holygrail {
-  display: flex;
-  flex-direction: column;
-
-  border: red;
-  border-width: 2px;
-  border-style: dotted;
-}
-/*sticky footer to bottom of page */
-.stretch {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  /* keeps button aligned on left border */
+  margin:0;
 }
 
 
-/*some size rules for the moss image in firstBox, can be changed later */
-#moss {
-    max-width: auto;
-    max-height: 300px;
-}
-
-/*secondBox is the box under firstBox
--later I can just concentrate them all under one rule but not yet */
-.secondBox {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(237, 64, 235);
-    justify-content: center;
-    align-items: center;
-    padding-top: 25px;
-  padding-bottom: 25px;
-
-    border: red;
-  border-width: 2px;
-  border-style: dotted;
-}
-/* b1 's rules make sure the images + text are given a box to live within
-that is centered and gives them spaces in between each other*/
-.b1 {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-
-    border: red;
-  border-width: 2px;
-  border-style: dotted;
-
-}
-/* sets the maximum width of each secondBox image + its' associated text*/
-.info {
-    max-width: 200;
-    max-height: auto;
-    border: red;
-  border-width: 2px;
-  border-style: dotted;
-}
-
-img .info {
-  max-width: 200px;
-  max-height: 200px;
-}
-#surrender {
-  max-width: 204px;
-  max-height: 154px;
-}
-.text {
+/* what if we dont make modal a flex container*/
+.modal{
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  /* so that text doesnt go wider than the image width */
-  max-width: fit-content;
-  padding-left: 2px;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
 }
-/*this box will have italicized medium text followed by
-bold small text */
-.thirdBox {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(235, 124, 233);
-    font-style: italic;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding-top: 25px;
-  padding-bottom: 25px;
+/* good job*/
 
-    border: red;
-  border-width: 2px;
-  border-style: dotted;
-    
-}
-/* text formatting*/
-.c1 {
-    display: flex;
-    flex: wrap;
-    flex-direction: row;
-
-    border: red;
-  border-width: 2px;
-  border-style: dotted;
-}
-.c2 {
-    display: flex;
-    flex-wrap: wrap;
-    font-size:large;
-    font-weight: bold;
-    font-style: normal;
-    flex-direction: row;
-
-    border: red;
-  border-width: 2px;
-  border-style: dotted;
-
-}
-/*final and fourth box, aka fourthBox */
-.fourthBox {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(172, 115, 30);
-    justify-content: center;
-    align-items: center;
-
-    border: red;
-  border-width: 2px;
-  border-style: dotted;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-.d1 {
+.modalTitle {
+font-weight: bold;
+font-size: large;
 display: flex;
-flex-wrap:wrap;
-flex-direction: column;
-max-width: 700px;
-flex:1;
-
-border: red;
-  border-width: 2px;
-  border-style: dotted;
-}
-.d2 {
-display:flex;
-flex-wrap: wrap;
-
-border: red;
-  border-width: 2px;
-  border-style: dotted;
+  
 }
 
-  .secondBox {
-    flex: 1;
+.text {
+  display: flex;
 
-    border: red;
-  border-width: 2px;
-  border-style: dotted;
-  }
+}
+.continue {
+  margin-left: 50px;
+  display: flex;
+  flex-shrink: 0;
 
-/* sets max width of rock paper and scissor img*/
-  .info img{
-    max-width: 200px;
+}
 
-    border: red;
-  border-width: 2px;
-  border-style: dotted;
-  }
-
-
-
-  /*formatting for footer */
-footer {
-  border: 5px;
-  background-color: #1F2937;
+.placeholder {
+  width: 400px;
+  height: 200px;
+  background: gray;
   display: flex;
   justify-content: center;
   align-items: center;
+  color:  #E5E7EB;
+}
 
-  border: red;
-  border-width: 2px;
-  border-style: dotted;
-  }
+.firstBox {
+  display: flex;
+  flex-direction: row;
+  
+  max-width: auto;
+  height: 150px;
+  padding-top:60px;
+  padding-bottom:60px;
+}
+
+/*<!---2ndSquare-^^^^^^^^^^^^^^^^^^> */
+
+img {
+  width: 100px;
+  height: 100px;
+  max-width: 200px;
+}
+
+.secondTitle {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-itmes: space-evenly;
+  gap: 25px;
+  
+  max-width: auto;
+  height: 150px;
+  padding-bottom: 20px;
+}
+
+.textTwo{
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgTwo {
+  width: 160px;
+  border-radius: 8px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*<!---2ndSquare-^^^^^^^^^^^^^^^^^^> */
+
+.thirdcontainer {
+  display:flex;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #E5E7EB;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  max-width: auto;
+  height: 150px;
+  padding: 40px;
+
+}
+
+
+.bigpara {
+  display:flex;
+  font-style: italic;
+  font-size: 26px;
+  color: #1F2937;
+  width: 590px;
+  margin: 0;
+  padding: 0;
+}
+/* flex exclude ^^^ to get to end */
+
+
+#smallpara {
+  display: flex;
+  font-size: 18px;
+  color: #1F2937;
+  margin: 0;
+  padding: 0;
+  margin-top: -45px;
+  margin-right: -300px;
+  justify-content: flex-end;
+
+}
+
+.fourthcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+}
+.bluebox{
+  display: flex;
+  background-color: #3882F6;
+  flex:1;
+  max-width: 700px;
+  height: 150px;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 8px;
+
+}
+
+.cAlLToAcTiOn{
+  color:  #E5E7EB;
+  font-size: 18px;
+  font-weight: 500;
+}
+.fourthText {
+  color:  #E5E7EB;
+  font-size: 12px;
+
+}
+
+.lastButton {
+  all: unset;
+  display: flex;
+  flex: 1;
+  max-width: 70px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  background-color: #3882F6;
+  color:  #E5E7EB;
+  border-style: solid;
+  padding: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5px;
+
+}
+
+.footer {
+  background-color: #1F2937;
+  color:  #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
